@@ -1,3 +1,6 @@
+/* body */
+
+/* set background to white and center align */
 body {
     background-color: #FFFFFF;
     padding: 0;
@@ -6,13 +9,15 @@ body {
     font-family: 'Roboto', arial;
 }
 
+/* container is flex by column, items ordered down cross axis */
 .container {
     display: flex;
     flex-direction: column;
 }
 
-/* Navbar Part */
+/* navbar */
 
+/* set flex, text color white, dark blue background, center align*/
 .navbar {
     display: flex;
     color: #F9FAF8;
@@ -21,18 +26,21 @@ body {
     align-items: center;
 }
 
+/* set header logo size and margin */
 .header-logo img {
     width: 84px;
     height: 84px;
     margin-right: auto;
 }
 
+/* navbar link area styles */
 .header-link {
     display: flex;
     margin-left: auto;
     padding: 0px 100px 0px 0px;  
 }
 
+/* navbar link styles */
 .header-link a {
     text-decoration: none;
     color: #E5E7EB;
@@ -41,8 +49,9 @@ body {
     font-family: 'Roboto', arial;
 }
 
-/* Hero Part */
+/* hero */
 
+/* style for all classes ending in hero */
 .hero {
     display: flex;
     color: #F9FAF8;
@@ -52,6 +61,7 @@ body {
     padding: 90px;
 }
 
+/* main content style */
 .hero-cta {
     flex-basis: 400px;
     display: flex;
@@ -60,11 +70,13 @@ body {
     margin-right: 50px;
 }
 
+/* hero smaller font style */
 .hero-cta p {
     font-family: 'Roboto', arial;
     opacity: 0.7;
 }
 
+/* welcome to my webpage style */
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -73,6 +85,7 @@ h1 {
     font-family: 'Roboto', arial;
 }
 
+/* button style */
 .hero button {
     display: block;
     text-align: center;
@@ -87,24 +100,54 @@ h1 {
     font-weight: bold;
 }
 
+/* image style */
 .hero-image img {
     width: 500px;
     height: 350px;
 }
 
-/* Content Part */
+/* about me */
 
+/* about me main style, flex column */
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 0 200px;
+}
+
+/* about me p style*/
+.about p {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Roboto', arial;
+}
+
+/* about me b style*/
+.about b {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-family: 'Roboto', arial;
+    text-align: right;
+}
+
+/* Pictures */
+
+/* align rest of page center */
 .content {
     align-items: center;
 }
 
+/* align rest of page center */
 .content-info {
-    display: flex;
-    /* border: 1px solid gold; */
+    display: flex; 
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* picture container */
 .content-info img {
     width: 200px;
     height: 200px;
@@ -114,32 +157,10 @@ h1 {
     margin: 5px 20px 0px 20px;
 }
 
-/* Quotation Part */
+/* send message part */
 
-.quote {
-    display: flex;
-    flex-direction: column;
-    background-color: #E5E7EB;
-    padding: 0 200px;
-}
-
-.quote p {
-    font-size: 36px;
-    color: #1F2937;
-    font-style: italic;
-    font-weight: lighter;
-    font-family: 'Roboto', arial;
-}
-
-.quote b {
-    padding-bottom: 20px;
-    padding-right: 10px;
-    font-family: 'Roboto', arial;
-    text-align: right;
-}
-
-/* Sign Up Part */
-.sign-up {
+/* overall container style */
+.msg {
     background-color: #3882F6 ;
     margin: 50px 200px;
     padding: 10px 80px;
@@ -149,20 +170,24 @@ h1 {
     border-color: none;
 }
 
-.sign-item {
+/* item style */
+.msg-item {
     flex: 1;
 }
 
-.signs-text {
+/* text style */
+.msg-text {
     text-align: left;
 }
 
-.signs-text p {
+/* enter your message part */
+.msg-text p {
     color: #fff;
     opacity: 0.7;
     margin: 5px 30px 30px 50px;
 }
 
+/* feel free part */
 h3 {
     color: #fff;
     font-family: 'Roboto', arial;
@@ -170,7 +195,8 @@ h3 {
     margin: 30px 0px 0px 50px;
 }
 
-.signs-button button {
+/* send bere button style */
+.msg-button button {
     color: #fff;
     font-family: 'Roboto', arial;
     border-color: #fff;
@@ -181,7 +207,6 @@ h3 {
 }
 
 /* Footer */
-
 .footer {
     background-color: #1F2937;
     color: #fff;
