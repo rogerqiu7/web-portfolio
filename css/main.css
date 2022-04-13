@@ -12,7 +12,7 @@ body {
 /* container is flex by column, items ordered down cross axis */
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction:  column;
 }
 
 /* navbar */
@@ -20,16 +20,16 @@ body {
 /* set flex, text color white, dark blue background, center align*/
 .navbar {
     display: flex;
-    color: #F9FAF8;
-    background-color: #1F2937;
-    padding: 20px 0px 20px 100px;
+    color: #1F2937;
+    background-color: #E5E7EB;
+    padding: 0px 0px 0px 100px;
     align-items: center;
 }
 
 /* set header logo size and margin */
 .header-logo img {
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     margin-right: auto;
 }
 
@@ -43,8 +43,8 @@ body {
 /* navbar link styles */
 .header-link a {
     text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
+    color: #1F2937;
+    font-size: 20px;
     padding: 10px;
     font-family: 'Roboto', arial;
 }
@@ -58,7 +58,7 @@ body {
     background-color: #1F2937;
     align-items: center;
     justify-content: center;
-    padding: 90px;
+    padding: 50px;
 }
 
 /* main content style */
@@ -102,8 +102,8 @@ h1 {
 
 /* image style */
 .hero-image img {
-    width: 500px;
-    height: 350px;
+    width: 700px;
+    height: 500px;
 }
 
 /* about me */
@@ -113,7 +113,7 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 0 200px;
+    padding: 0 100px;
 }
 
 /* about me p style*/
@@ -130,7 +130,7 @@ h1 {
     padding-bottom: 20px;
     padding-right: 10px;
     font-family: 'Roboto', arial;
-    text-align: right;
+    text-align: center;
 }
 
 /* Pictures */
