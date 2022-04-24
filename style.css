@@ -99,7 +99,7 @@ main {
 /* style for side content in main */
 .side-content {
     display: flex;
-    flex-basis: 600px;
+    width: 50%;
     justify-content: center;
     flex-direction: column;
     margin: 50px;
@@ -262,3 +262,4 @@ h3 {
     color: #fff;
     font-family: 'Roboto', arial;
 }
+
