@@ -1,0 +1,198 @@
+/* Set 3 universal colors */
+:root {
+    --primary-dark: #1F2937;
+    --primary-light: #F5FCFF;
+    --secondary-light: #fefefe;
+  }
+  
+/* all elements, before and after have no padding or margin  */
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* set body background color, accent color, font and line height */
+  body {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+  }
+  
+  /* set button and input elements to fill width, no borders and inherit from settings class*/
+  button,
+  input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  /* create padding for header */
+  .header {
+    padding: 30px;
+  }
+  
+  /* center and englargen title */
+  .title {
+    text-align: center;
+    font-size: 80px;
+  }
+  
+  /* center main content section to flex*/
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* center settings column to flex vertically with spacing */
+  .settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 200px;
+  }
+  
+  /* button styling */
+  button {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+  }
+  
+  /* set active button to dark color */
+  button.active {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+  }
+  
+  /* button enlargen transition speed */
+  button,
+  input[type='color'] {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  /* button hover enlargen transition size */
+  button:hover,
+  input[type='color']:hover {
+    transform: scale(1.05);
+  }
+  
+  /* input color button size */
+  input[type='color'] {
+    width: 80px;
+    height: 80px;
+  }
+  
+   /* input color button size */
+  .size-value {
+    margin-bottom: -20px;
+    font-size: 20px;
+  }
+  
+  /* palette size slider appearance */
+  input[type='range'] {
+    -webkit-appearance: none;
+    background-color: var(--primary-light);
+  }
+  
+  /* palette size slider style and coloring */
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 25px;
+    background: var(--secondary-light);
+  }
+  
+  /* palette size slider style and coloring */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: var(--primary-dark);
+  }
+  
+    /* set grid style, size, color and shadow, no user selection while drawing */
+  .grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: var(--secondary-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    user-select: none;
+  }
+  
+/* set footer to be at bottom of page */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #1F2937;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Roboto', arial;
+  text-align: center;
+}
+
+/* let visited github link to remain white */
+a:visited {
+  color: white;
+}
+  
+  /* Sizing settings*/
+  
+  /* less than 1200px width, center all content in main */
+  @media (max-width: 1200px) {
+    .main {
+      justify-content: center;
+    }
+  }
+  
+  /* less than 850px width, reduce width gap in main */
+  @media (max-width: 850px) {
+    .main {
+      gap: 50px;
+    }
+  
+    /* reduce width gap in settings */
+    .settings {
+      width: 150px;
+      gap: 16px;
+    }
+  
+     /* reduce grid size */
+    .grid {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  /* less than 650px width, reduce title font size */
+  @media (max-width: 650px) {
+    .title {
+      font-size: 50px;
+    }
+  
+    /* make columns stack vertically */
+    .main {
+      flex-direction: column-reverse;
+    }
+  
+    /* make grid smaller stack vertically */
+    .grid {
+      width: 300px;
+      height: 300px;
+    }
+  }

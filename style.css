@@ -12,7 +12,7 @@ body {
 /* container is flex by column, items ordered down cross axis */
 .container {
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
 }
 
 /* navbar */
@@ -258,8 +258,102 @@ h3 {
 
 /* Footer */
 .footer {
+    padding: 5px 5px;
     background-color: #1F2937;
+    font-size: 16px;
     color: #fff;
     font-family: 'Roboto', arial;
 }
 
+a,
+.footer:visited {
+    color: white;
+}
+
+/* Sizing settings*/
+
+  /* less than 1200px width, reduce width gap in main */
+  @media (max-width: 1200px) {
+      
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+      gap: 50px;
+      color: #F9FAF8;
+      background-color: #1F2937;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+  /* style for side content in main */
+.side-content {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.side-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    align-self: flex-end;
+}
+
+/* main content style */
+.main-content {
+  
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+}
+
+.block {
+    display:block;
+    background:#000;
+    background:rgba(0, 0, 0, 0.3);
+    color:#FFF;
+    padding:10px 5px;
+}
+
+/* welcome to my webpage style */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin: 0;
+    font-family: 'Roboto', arial;
+}
+
+/* main smaller font style */
+.main-content p {
+    font-family: 'Roboto', arial;
+}
+
+.main-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    align-self: flex-end;
+}
+
+/* image style */
+.main-image img {
+    width: 700px;
+    height: 500px;
+    filter:blur(2px);
+}
+}
+  
+  
