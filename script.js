@@ -29,7 +29,3 @@ setInterval(() => {
   // type out age
   timeContainer.innerText = " - I am " + numyears + " years, " + nummonths + " months, " + numdays +  " days, " + numhours + " hours, " + numminutes + " minutes and " + numseconds + " seconds old"}, 1000);
 
-
-
-
-

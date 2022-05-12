@@ -4,7 +4,10 @@
         <!--create icon, create scaling, link to main.css and title the webpage tab-->
         <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/registered_ae-fe0f.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
         <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+        <!-- Picture carousel CSS-->
+        <link href="splide-css/themes/splide-skyblue.min.css"rel="stylesheet"> 
         <title>Roger Qiu - Web Portfolio</title>
     </head>
     <body>
@@ -64,7 +67,6 @@
                     <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/tree/main/Rent%20Prediction'">🏘️ Rent Prediction</button>
                     <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/tree/main/Honey%20Production'">🐝 Honey Production</button>
                     <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/tree/main/Law%20of%20Large%20Numbers'">🔢 Law of Large Numbers</button>
-
                 </div>
             </main>
 
@@ -80,34 +82,62 @@
                 <b>- I have a cat named Tucker</b>
             </div>
 
-            <!-- pictures section-->
+            <!-- picture carousel section using Splide library-->
             <div class="content">
-                <div class="content-info">
-                    <div>
-                        <img src="images/tucker1.jpg">
-                        <p>My Cat, Tucker</p>
+                <section id="image-carousel" class="splide" aria-label="image carousel">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="images/tucker1.jpg" alt="tucker1"> 
+                                <div> My cat, Tucker </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/houston.webp" alt="houston"> 
+                                <div> My hometown, Houston </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/food1.jpg" alt="noodles"> 
+                                <div> One of my favorite foods </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/denver1.jpg" alt="denver1">
+                                <div> My recent vacation in Denver </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/tucker2.jpg" alt="tucker2"> 
+                                <div> This is how Tucker sleeps </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/food2.jpg" alt="burgers">
+                                <div> More food that I love </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/dhahran.webp" alt="dhahran">
+                                <div> Dhahran, Saudi Arabia </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/food3.jpg" alt="tacos">
+                                <div> More food </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/slu.jfif" alt="slu">
+                                <div> My undergraduate, Saint Louis University </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/tucker3.jpg" alt="tucker3">
+                                <div> Tucker also sleeps like a ball </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/food4.jpg" alt="veggies">
+                                <div> Vietnamese food </div> 
+                            </li>
+                            <li class="splide__slide">
+                                <img src="images/usd.jpg" alt="usd">
+                                <div> Upcoming graduate school, University of San Diego </div><p>.</p> 
+                            </li>
+                        </ul>
                     </div>
-                    <div>
-                        <img src="images/food1.jpg">
-                        <p>One of my favorite foods</p>
-                    </div>
-                    <div>
-                        <img src="images/denver1.jpg">
-                        <p>My recent vacation in Denver</p>
-                    </div>
-                    <div>
-                        <img src="images/tucker2.jpg">
-                        <p>This is how Tucker sleeps</p>
-                    </div>
-                    <div>
-                        <img src="images/food2.jpg">
-                        <p>More food that I love</p>
-                    </div>
-                    <div>
-                        <img src="images/denver3.jpg">
-                        <p>Another picture of Denver</p>
-                    </div>
-                </div>
+                </section>
             </div>
 
             <!-- send message section-->
@@ -128,7 +158,9 @@
             </div>
 
         </div>
-
+        <!-- Splide carousel JS-->
+        <script src="splide-js/splide.min.js"></script>
+        <!-- JS -->
         <script src="script.js"></script>
     </body>
 </html>
