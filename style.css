@@ -268,7 +268,7 @@ a,
 /* Sizing settings*/
 
   /* less than 1200px width, reduce width gap in main */
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
       
     .container {
         display: flex;
