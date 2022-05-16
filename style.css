@@ -8,15 +8,11 @@
 
 /* body */
 
-/* set background to white and center align */
+/* set background to white and center align, flex by column, items ordered down cross axis */
 body {
 	background-color: #f5fcff;
 	text-align: center;
 	font-family: "Roboto", arial;
-}
-
-/* container is flex by column, items ordered down cross axis */
-.container {
 	display: flex;
 	flex-direction: column;
 }
@@ -46,7 +42,6 @@ nav {
 }
 
 /* button styles */
-
 button {
 	width: 200px;
 	font-size: 18px;
@@ -62,11 +57,13 @@ button {
 	transition: all 0.4s ease-in-out;
 }
 
+/* hover transition effect*/
 button:hover {
 	background-position: 100% 0;
 	transition: all 0.4s ease-in-out;
 }
 
+/* button color gradients */
 .blue-green {
 	background-image: linear-gradient(
 		to right,
@@ -168,14 +165,9 @@ h1 {
 	font-weight: bold;
 	color: #f9faf8;
 	margin: 0;
-	font-family: "Roboto", arial;
 }
 
-/* main smaller font style */
-.main-content p {
-	font-family: "Roboto", arial;
-}
-
+/* download resume button */
 .main-content button {
 	display: flex;
 	align-items: center;
@@ -184,7 +176,7 @@ h1 {
 	align-self: flex-end;
 }
 
-/* image style */
+/* background image style */
 .main-image img {
 	width: 700px;
 	height: 500px;
@@ -207,7 +199,6 @@ h1 {
 	color: #1f2937;
 	font-style: bold;
 	font-weight: lighter;
-	font-family: "Roboto", arial;
 	margin: 15px;
 	text-decoration: underline;
 }
@@ -216,7 +207,6 @@ h1 {
 .about b {
 	padding-bottom: 20px;
 	padding-right: 10px;
-	font-family: "Roboto", arial;
 	text-align: center;
 }
 
@@ -269,10 +259,9 @@ h1 {
 	margin: 5px 30px 30px 50px;
 }
 
-/* feel free part */
+/* message me part */
 h3 {
 	color: #fff;
-	font-family: "Roboto", arial;
 	padding: 0;
 	margin: 30px 0px 0px 50px;
 }
@@ -283,7 +272,6 @@ h3 {
 	background-color: #1f2937;
 	font-size: 16px;
 	color: #fff;
-	font-family: "Roboto", arial;
 }
 
 a,
@@ -351,6 +339,8 @@ a,
 
 	/* make message section flex vertically */
 	.msg {
+		margin: 50px 50px;
+		padding: 10px 10px;
 		flex-direction: column;
 	}
 }
