@@ -1,166 +1,78 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--create icon, create scaling, link to main.css and title the webpage tab-->
-        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/registered_ae-fe0f.png">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- CSS -->
-        <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
-        <!-- Picture carousel CSS-->
-        <link href="splide-css/themes/splide-skyblue.min.css"rel="stylesheet"> 
-        <!-- Splide carousel JS-->
-        <script src="splide-js/splide.min.js" defer></script>
-        <!-- JS -->
-        <script src="script.js" defer></script>
-        <title>Roger Qiu - Web Portfolio</title>
-    </head>
-    <body>
-            <!-- navigation bar, header logo style for profile pic-->
-            <nav>
-                <div class="header-logo">
-                    <img src="images/profile1.jpg">
-                </div>
-                <!-- style for links-->
-                <div class="header-link">
-                    <button class="dark" onclick="window.location.href='https://github.com/rogerqiu7'">My GitHub</a> </button>
-                    <button class="dark" onclick="window.location.href='https://www.linkedin.com/in/rogerqiu7/'">My LinkedIn</button>
-                    <button class="dark" onclick="window.location.href='https://www.sandiego.edu/'">Current School</button>
-                </div>
-            </nav>
-            
-            <!-- main content with picture and buttons-->
-            <main>
-                <!--content on the left side of main-->
-                <div class="side-content">
-                    <h2> Javascript Apps </h2>
-                    <button class="light" onclick="window.location.href='https://rogerqiu7.github.io/Simple-Calculator/'">➗ Simple Calculator</a> </button>
-                    <button class="light" onclick="window.location.href='https://rogerqiu7.github.io/Painting-Palette/'">🖌️ Painting Palette</a> </button>
-                    <h2> REST API </h2>
-                    <button class="light" onclick="window.location.href=' https://rogerqiu7.github.io/Live-Weather/'">🌦️ Live Weather</a> </button>
-                    <h2> SQL Projects </h2>
-                    <button class="light" onclick="window.location.href='https://rogerqiu7.github.io/Airbnb-Database/'">🏨 Airbnb Database</a> </button>
-                    <button class="light" onclick="window.location.href='https://rogerqiu7.github.io/Sales-Analysis/'">📊 Sales Analysis</a> </button>
-                    <h2> R Projects </h2>
-                    <button class="light" onclick="window.location.href='https://rogerqiu7.github.io/Streaming-Stocks/'">🎥 Streaming Stocks</button>
-                </div>
+<html lang="en">
 
-                <!-- Main picture-->
-                <div class="main-image">
-                    <img src="images/sandiego.jpg" alt="sandiego">
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" type="text/javascript" defer></script>
+  <script src="projects.js" type="text/javascript" defer></script>
+  <script src="form-validation.js" type="text/javascript" defer></script>
+  <script src="save-form.js" type="text/javascript" defer></script>
+</head>
 
-                <!--Main content-->
-                <div class="main-content">
-                    <div class="block">
-                    <h1>Hi, Welcome to My Webpage!</h1>
-                    <p>You can see some of my projects and applications here.</p>
-                    </div>
-                    <!-- main style with picture and button-->
-                    <button class="blue-green" type="submit" onclick="window.open('Roger Qiu Resume.pdf')">Download My Resume Here</button>
-                </div>
+<body>
+  <section class="details"></section>
+  <nav id="navbar" class="flex bg-white">
+    <a id="title" href="#">
+      <p class="title-text">Home</p>
+    </a>
+    <div id="nav-icon" class="nav_icon__container">
+      <img id="hamburger-icon" alt="hamburger icon" src="img/hamburger-icon.svg">
+    </div>
+    <ul id="nav-menu-links" class="nav_menu__container">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+    <span id="underline"></span>
+  </nav>
+  
+  <section id="about" class="about bg-white">
+    <article>
+      <!-- <img src="img/profile.png" alt="profile-pic" /> -->
+      <h1>Hi! I'm Roger Qiu</h1>
+      <p>
+        Welcome to my personal website and portfolio!
+        <br />
+        <br />
+        I'm a data analyst at Cohere Health, a healthcare technology company. I am currently pursuing a Master's in Data Science at the University of San Diego, with a graduation date of August 2024.
+      </p>
+      <div class="socials__container">
+        <h6>LET'S CONNECT</h6>
+        <ul class="icons_social__container flex">
+          <li class="social_link">
+            <a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/moetalbi/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </li>
+          <li class="social_link">
+            <a aria-label="Github" target="_blank" href="https://github.com/Kweeka1"><i class="fa-brands fa-github"></i></a>
+          </li>
+            <button class="btn-primary btn-outlined">Resume</button>
+          </li>
+        </ul>
+      </div>
+    </article>
 
-                <!--content on the right side of main-->
-                <div class="side-content">
-                    <h2> Deep Learning </h2>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Life%20Expectancy/Life%20Expectancy.ipynb'">🧬 Life Expectancy</button>
-                    <h2> Unsupervised Machine Learning </h2>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Handwriting%20Recognition/Handwriting%20Recognition.ipynb'">✏️ Handwriting Recognition</button>
-                    <h2> Supervised Machine Learning </h2>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Rent%20Prediction/Rent%20Prediction.ipynb'">🏘️ Rent Prediction</button>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Honey%20Production/Honey%20Production.ipynb'">🐝 Honey Production</button>
-                    <h2> Data Analysis / Other </h2>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Stock%20Analysis/Stock%20Analysis.ipynb'">💹 Hotel Stock Analysis</button>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Differential%20Calculus%20Limits/Differential%20Calculus%20Limits.ipynb'">♾️ Differential Calculus Limits</button>
-                    <button class="light" onclick="window.location.href='https://github.com/rogerqiu7/Python-Projects/blob/main/Law%20of%20Large%20Numbers/Law%20of%20Large%20Numbers.ipynb'">🔢 Law of Large Numbers</button>
-                    
-                </div>
-            </main>
+  <h2>Skills</h2>
+  <ul class="stack_item__list flex">
+      <!-- Include the list items for Skills here -->
+  </ul>
+  <h2>Models</h2>
+  <ul class="stack_item__list flex">
+    <!-- Include the list items for Frameworks here -->
+  </ul>
+  <h2>Languages</h2>
+  <ul class="stack_item__list flex">
+    <!-- Include the list items for Languages here -->
+  </ul>
+  </section>
 
-            <!-- about me, section-->
-            <div class="about">
-                <p>About</p>
-                <!-- Dynamic Age with Javascript-->
-                <b> <span id="age"> - I am... </span> </b>
-                <b>- I grew up in Dhahran, Saudi Arabia</b>
-                <b>- I am currently a Masters student in Data Science at the University of San Diego.</b>
-                <b>- I'm passionate about building programs (whether it's a website or machine learning model) and applying new technologies and methods to solve real-world problems.</b>
-                <b>- I currently live in Houston, Texas.</b>
-                <b>- I have a cat named Tucker</b>
-            </div>
+  <section id="portfolio" class="projects"></section>
+</body>
 
-            <!-- picture carousel section using Splide library-->
-            <div class="content">
-                <section id="image-carousel" class="splide" aria-label="image carousel">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img src="images/tucker1.jpg" alt="tucker1"> 
-                                <div> My cat, Tucker </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/houston.webp" alt="houston"> 
-                                <div> My hometown, Houston </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/food1.jpg" alt="noodles"> 
-                                <div> One of my favorite foods </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/denver1.jpg" alt="denver1">
-                                <div> My recent vacation in Denver </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/tucker2.jpg" alt="tucker2"> 
-                                <div> This is how Tucker sleeps </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/food2.jpg" alt="burgers">
-                                <div> More food that I love </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/dhahran.webp" alt="dhahran">
-                                <div> Dhahran, Saudi Arabia </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/food3.jpg" alt="tacos">
-                                <div> More food </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/slu.jfif" alt="slu">
-                                <div> My undergraduate, Saint Louis University </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/tucker3.jpg" alt="tucker3">
-                                <div> Tucker also sleeps like a ball </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/food4.jpg" alt="veggies">
-                                <div> Vietnamese food </div> 
-                            </li>
-                            <li class="splide__slide">
-                                <img src="images/usd.jpg" alt="usd">
-                                <div> Upcoming graduate school, University of San Diego </div><p>.</p><p>.</p>  
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <!-- send message section-->
-            <div class="msg">
-                <div class="msg-item msg-text">
-                    <h3>Feel free to reach out to me!</h3>
-                    <p>You can also add my LinkedIn with the link at the top of the page</p>
-                </div>
-                <div class="msg-item msg-button">
-                    <!--button that sends email to my email link-->
-                    <button class="ocean-blue"onclick= "document.location =  'mailto:rogerqiu7@gmail.com'">Click to Email me!</button>
-                </div>
-            </div>
-
-            <!-- footer section-->
-            <div class="footer">
-                Page created using HTML, CSS & Javascript, source code available <a href="https://github.com/rogerqiu7/Web-Portfolio"> here on my GitHub </a>
-            </div>
-    </body>
 </html>
