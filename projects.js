@@ -1,5 +1,10 @@
+// Getting the portfolio section from the HTML document
 const projectsSection = document.getElementById('portfolio');
 
+// Defining the projects data
+// Each object represents a project with various details
+// Including image source, title, type, description, technologies used, and the source link
+// Example project is described below
 const projects = [
   {
     img: {
@@ -58,8 +63,10 @@ const projects = [
   },
 ];
 
+// Function to generate a list of items from an array
 const generateList = (arr) => arr.reduce((elements, element) => `${elements}<li class="project_detail">${element}</li>`, '');
 
+// Function to generate HTML code for a card representing a project
 const generateCard = (project, id) => `
     <section class="card flex bg-white">
       <img class="desktop-bg" src="${project.img.src}" alt="${project.img.alt}" />
@@ -80,6 +87,9 @@ const generateCard = (project, id) => `
       </article>
     </section>`;
 
+  
+// Event listener to populate the projects section with cards when the window loads
+// Iterating over the projects array and inserting each card into the projectsSection
 window.addEventListener('load', () => {
   projects.forEach((project, index) => {
     const card = generateCard(project, index);

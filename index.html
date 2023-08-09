@@ -1,78 +1,124 @@
 <html lang="en">
-
 <head>
+  <!-- Meta information for compatibility and viewport settings -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Link to external stylesheet -->
   <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" type="text/javascript" defer></script>
+  
+  <!-- Links to external JavaScript files with the defer attribute -->
   <script src="projects.js" type="text/javascript" defer></script>
-  <script src="form-validation.js" type="text/javascript" defer></script>
-  <script src="save-form.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-  <section class="details"></section>
+
+  <!-- Navigation bar -->
   <nav id="navbar" class="flex bg-white">
+    <!-- Title and Home link -->
     <a id="title" href="#">
       <p class="title-text">Home</p>
     </a>
+    <!-- Hamburger menu icon -->
     <div id="nav-icon" class="nav_icon__container">
       <img id="hamburger-icon" alt="hamburger icon" src="img/hamburger-icon.svg">
     </div>
+    <!-- Navigation links -->
     <ul id="nav-menu-links" class="nav_menu__container">
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
     </ul>
+    <!-- Underline for styling -->
     <span id="underline"></span>
   </nav>
-  
+
+  <!-- About section with profile details -->
   <section id="about" class="about bg-white">
     <article>
-      <!-- <img src="img/profile.png" alt="profile-pic" /> -->
-      <h1>Hi! I'm Roger Qiu</h1>
+      <h1>Hi, I'm Roger Qiu, welcome to my personal website! </h1>
+      <!-- Introduction and bio -->
       <p>
-        Welcome to my personal website and portfolio!
-        <br />
-        <br />
         I'm a data analyst at Cohere Health, a healthcare technology company. I am currently pursuing a Master's in Data Science at the University of San Diego, with a graduation date of August 2024.
+        <br />
+        <br />
+        I have a passion for creating and developing, ranging from online applications to machine learning models. I enjoy drawing value from big data, with a particular interest in supervised machine learning models.
       </p>
+      <!-- Social media links and Resume button -->
       <div class="socials__container">
         <h6>LET'S CONNECT</h6>
         <ul class="icons_social__container flex">
-          <li class="social_link">
-            <a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/moetalbi/"><i class="fa-brands fa-linkedin-in"></i></a>
-          </li>
-          <li class="social_link">
-            <a aria-label="Github" target="_blank" href="https://github.com/Kweeka1"><i class="fa-brands fa-github"></i></a>
-          </li>
-            <button class="btn-primary btn-outlined">Resume</button>
-          </li>
+          <li class="social_link"><a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/rogerqiu7/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li class="social_link"><a aria-label="Github" target="_blank" href="https://github.com/rogerqiu7"><i class="fa-brands fa-github"></i></a></li>
+          <button class="btn-primary btn-outlined">Resume</button>
         </ul>
       </div>
     </article>
 
-  <h2>Skills</h2>
-  <ul class="stack_item__list flex">
-      <!-- Include the list items for Skills here -->
-  </ul>
-  <h2>Models</h2>
-  <ul class="stack_item__list flex">
-    <!-- Include the list items for Frameworks here -->
-  </ul>
-  <h2>Languages</h2>
-  <ul class="stack_item__list flex">
-    <!-- Include the list items for Languages here -->
-  </ul>
+    <!-- Skills, Models, and Languages lists -->
+    <div class="stack-container">
+
+      <h2>Education</h2>
+      <!-- Languages list -->
+      <ul class="stack_item__list">
+        <li>Dummy Language 1</li>
+        <li>Dummy Language 2</li>
+      </ul>
+
+      <h2>Experience</h2>
+      <!-- Languages list -->
+      <ul class="stack_item__list">
+        <li>Dummy Language 1</li>
+        <li>Dummy Language 2</li>
+        <li>Dummy Language 3</li>
+      </ul>
+
+      <h2>Skills</h2>
+      <!-- Skills list -->
+      <ul class="stack_item__list">
+        <li>Dummy Skill 1</li>
+        <li>Dummy Skill 2</li>
+        <li>Dummy Skill 3</li>
+      </ul>
+
+      <h2>Machine Learning Models</h2>
+      <!-- Models list -->
+      <ul class="stack_item__list">
+        <li>Dummy Model 1</li>
+        <li>Dummy Model 2</li>
+        <li>Dummy Model 3</li>
+      </ul>
+
+      <h2>Languages</h2>
+      <!-- Languages list -->
+      <ul class="stack_item__list">
+        <li>Dummy Language 1</li>
+        <li>Dummy Language 2</li>
+        <li>Dummy Language 3</li>
+      </ul>
+    </div>
   </section>
 
+  <!-- Portfolio section -->
   <section id="portfolio" class="projects"></section>
-</body>
 
+  <!-- Footer with GitHub link and dummy text -->
+  <footer class="flex bg-white">
+    <a href="https://github.com/yourusername" target="_blank" class="title-text">GitHub</a>
+    <div class="footer__container">
+      <p class="dummy-text">Some dummy text here, feel free to replace.</p>
+    </div>
+    <ul class="footer_menu__container">
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#terms">Terms</a></li>
+    </ul>
+  </footer>
+
+</body>
 </html>
