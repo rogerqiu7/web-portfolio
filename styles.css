@@ -237,14 +237,6 @@ button:hover > .source_code_icon {
   width: 20%; /* Adjust as needed for the width of each list */
 }
 
-/* Portfolio wrapper Section */
-
-/* Styles for the Portfolio wrapper section */
-.portfolio {
-  position: relative;
-  background-color: #f1f1f1;
-}
-
 /* Projects Section */
 
 .projects {
