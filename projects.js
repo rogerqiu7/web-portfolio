@@ -50,6 +50,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'Javascript'],
     source: 'https://rogerqiu7.github.io/Simple-Calculator/',
   },
+/*
   {
     img: {
       src: './img/calculator.png',
@@ -61,6 +62,7 @@ const projects = [
     technologies: ['Java', 'SCSS', 'Javascript', 'Jest'],
     source: 'https://rogerqiu7.github.io/Simple-Calculator/',
   },
+*/
 ];
 
 // Function to generate a list of items from an array

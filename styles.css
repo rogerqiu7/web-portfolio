@@ -342,34 +342,6 @@ footer .footer__container {
 
 /* Other Media Section */
 
-@media screen and (max-width: 1000px) {
-  /* Projects Section */
-
-  .card {
-    align-items: center;
-    flex-direction: column !important;
-  }
-
-  /* About - stacks list */
-
-  .stack_item__dropdown {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    padding: 1rem 0;
-  }
-
-  .dropdown_item {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    background-color: #f7f7f9;
-    padding: 0.5rem;
-    width: 100%;
-    border-radius: 8px;
-  }
-}
-
 @media screen and (min-width: 821px) {
 
   /* Projects Section */
@@ -396,22 +368,44 @@ footer .footer__container {
     flex-direction: row;
   }
 
-
-@media screen and (max-width: 820px) {
- 
-  .projects {
-    padding: 6rem 0.5rem !important;
-  }
-
-  .project_description__container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card {
-    max-width: 544px;
-    min-width: 280px;
-  }
 }
 
+@media screen and (max-width: 768px) {
+  
+  /* Navbar adjustments for smaller screens */
+  #navbar a,
+  #navbar .nav_icon__container,
+  #navbar .nav_menu__container {
+    margin-right: 10px; /* Reduce margin for mobile */
+    margin-left: 10px;  /* Reduce margin for mobile */
+  }
+
+  /* Adjustments for the About section */
+  .about {
+    flex-direction: column; /* Stack the items vertically */
+    padding: 2rem; /* Reduce padding for mobile */
+  }
+
+  .about-container {
+    width: 100%; /* Use the full available width */
+    padding-right: 1rem; /* Adjust padding as needed */
+    padding-left: 1rem;
+  }
+  
+  .profile-pic {
+    width: 200px; /* Reduce image size for mobile */
+  }
+
+  /* Projects Section adjustments for smaller screens */
+  .card {
+    flex-direction: column; /* Stack the items vertically */
+    width: 100%;
+  }
+
+  /* Footer adjustments for smaller screens */
+  footer a,
+  footer .footer__container {
+    margin-right: 10px; /* Reduce margin for mobile */
+    margin-left: 10px;  /* Reduce margin for mobile */
+  }
 }
