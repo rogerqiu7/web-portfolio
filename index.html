@@ -20,28 +20,14 @@
 
 <body>
 
-  <!-- Navigation bar -->
-  <nav id="navbar" class="flex bg-white">
-    <!-- Title and Home link -->
-    <a id="title" href="#">
-      <p class="title-text">Home</p>
-    </a>
-    <!-- Hamburger menu icon -->
-    <div id="nav-icon" class="nav_icon__container">
-      <img id="hamburger-icon" alt="hamburger icon" src="img/hamburger-icon.svg">
-    </div>
-    <!-- Navigation links -->
-    <ul id="nav-menu-links" class="nav_menu__container">
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-    </ul>
-    <!-- Underline for styling -->
-    <span id="underline"></span>
-  </nav>
-
   <!-- About section with profile details -->
   <section id="about" class="about bg-white">
-    <article>
+
+    <div class="about-container">
+
+      <!-- Adding the profile image -->
+      <img src="img/profile.png" alt="Profile picture of Roger Qiu" class="profile-pic"/>
+
       <h1>Hi, I'm Roger Qiu, welcome to my personal website! </h1>
       <!-- Introduction and bio -->
       <p>
@@ -60,51 +46,52 @@
           <button class="btn-primary btn-outlined">Resume</button>
         </ul>
       </div>
-    </article>
+    </div>
 
     <!-- Skills, Models, and Languages lists -->
     <div class="stack-container">
 
       <h2>Education</h2>
       <!-- Languages list -->
-      <ul class="stack_item__list">
-        <li>Dummy Language 1</li>
-        <li>Dummy Language 2</li>
+      <ul class="about-coding_langs">
+        <li>University of San Diego</li>
+        <li>Saint Louis University</li>
       </ul>
 
       <h2>Experience</h2>
       <!-- Languages list -->
-      <ul class="stack_item__list">
-        <li>Dummy Language 1</li>
-        <li>Dummy Language 2</li>
-        <li>Dummy Language 3</li>
+      <ul class="about-coding_langs">
+        <li>Cohere</li>
+        <li>National Oilwell Varco</li>
+        <li>Werner Co.</li>
       </ul>
 
       <h2>Skills</h2>
       <!-- Skills list -->
-      <ul class="stack_item__list">
-        <li>Dummy Skill 1</li>
-        <li>Dummy Skill 2</li>
-        <li>Dummy Skill 3</li>
+      <ul class="about-coding_langs">
+        <li>Python</li>
+        <li>Apache Spark</li>
+        <li>Apache Airflow</li>
+        <li>SQL</li>
+        <li>Github</li>
+        <li>Git</li>
+        <li>AWS Suite</li>
+        <li>Jira</li>
       </ul>
 
-      <h2>Machine Learning Models</h2>
-      <!-- Models list -->
-      <ul class="stack_item__list">
-        <li>Dummy Model 1</li>
-        <li>Dummy Model 2</li>
-        <li>Dummy Model 3</li>
+      <h2>Machine Learning</h2>
+       <!-- Models list -->
+      <ul class="about-coding_langs">
+        <li>Linear Regression</li>
+        <li>Logistic Regression</li>
+        <li>Random Forest</li>
+        <li>K-Means Clustering</li>
+        <li>Keras Neural Networks</li>
       </ul>
-
-      <h2>Languages</h2>
-      <!-- Languages list -->
-      <ul class="stack_item__list">
-        <li>Dummy Language 1</li>
-        <li>Dummy Language 2</li>
-        <li>Dummy Language 3</li>
-      </ul>
+     
     </div>
   </section>
+
 
   <!-- Portfolio section -->
   <section id="portfolio" class="projects"></section>
@@ -116,7 +103,7 @@
 
     <a href="https://www.linkedin.com/in/rogerqiu7/" target="_blank" class="title-text">Contact</a>
 
-    <a href="https://github.com/rogerqiu7/Web-Portfolio" target="_blank" class="title-text">Terms & License</a>
+    <a href="https://github.com/rogerqiu7/Web-Portfolio/blob/main/LICENSE.txt" target="_blank" class="title-text">Terms & License</a>
 
     <div class="footer__container">
       <p class="dummy-text">© 2023 Roger Qiu.</p>
