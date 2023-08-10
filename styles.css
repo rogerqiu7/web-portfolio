@@ -29,7 +29,7 @@ body {
 /* Headings Styles */
 h1 {
   color: var(--text-dark-blue);
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 52px;
 }
@@ -72,11 +72,8 @@ button {
   display: flex;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   border-radius: 8px;
   padding: 12px;
-  transition: all 0.3s ease;
-  width: max-content;
 }
 
 /* Hover styles for icons inside buttons on hover */
@@ -119,26 +116,57 @@ button:hover > .source_code_icon {
   color: #fff;
 }
 
-/* About Section */
+/* ##############  Navbar  ################  */
 
-.about-container {
-
+#navbar {
+  height: 30px; /* you can adjust this value if needed */
+  padding: 1rem;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid black; /* Adds a thin black border to the bottom of the navbar */
 }
 
-.profile-pic {
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* This will maintain the aspect ratio */
+#navbar a,
+#navbar .nav_icon__container,
+#navbar .nav_menu__container {
+  margin-right: 150px; /* adjust the value as needed */
+  margin-left: 10rem;  /* adjust the value as needed */
 }
+
+/* Additional styles for navbar text, icons, etc., if needed */
+.nav_menu__container li {
+  display: inline; /* Makes the list items horizontal */
+  margin-right: 20px; /* Adjust spacing between list items */
+}
+
+.nav_menu__container a {
+  text-decoration: none; /* Removes underline from links */
+  color: black; /* Adjust link color if needed */
+}
+
+/* ##############  About Section  ################  */
 
 .about {
   display: flex;
-  flex-direction: row;
-  padding: 2rem 3rem;
+  padding: 4rem 3rem 1rem 3rem; /* Increased the top padding and reduced the bottom padding */
 }
 
-.about__stacks {
-  width: 55%;
-  min-width: 250px;
+.about-container {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  padding-right: 2rem; /* Add spacing between content and stack container */
+  padding-left: 5rem;
+}
+
+.profile-pic {
+  width: 250px; /* Adjust the width as needed */
+  height: auto; /* This will maintain the aspect ratio */
 }
 
 /* Styles for social icons container */
@@ -155,57 +183,39 @@ button:hover > .source_code_icon {
   justify-content: flex-start;
 }
 
-.project_coding_langs {
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  gap: 0.75rem;
-}
-
-.about-coding_langs > li {
-  list-style: none;
-  color: var(--bg-purple);
-  font-size: 12px;
-  background-color: var(--bg-lavender);
-  border-radius: 8px;
-  padding: 4px 12px;
-  margin: 4px 0; /* Add margin for spacing between items */
-}
-
-/* Styles for project coding languages */
-.project_coding_langs > li {
-  list-style: none;
-  color: var(--bg-purple);
-  font-size: 12px;
-  background-color: var(--bg-lavender);
-  border-radius: 8px;
-  padding: 4px 12px;
-}
-
-.project_details {
-  padding: 0.5rem 0;
-}
-
-.project_details > li {
-  margin-right: 1.5rem;
-  color: #7a869a;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.project_details > .project_card:first-child {
-  list-style: none;
-  color: var(--text-dark-blue);
-}
-
 .socials__container > .icons_social__container > .social_link {
   list-style: none;
   margin-right: 1rem;
 }
 
+/* Styles for Skills container */
+
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Add spacing between rows */
+}
+
+/* Style for each row */
+.row {
+  display: flex;
+  gap: 2rem; /* Add spacing between columns */
+}
+
+.about-coding_langs > li {
+  list-style: none;
+  color: var(--bg-purple);
+  font-size: 12.5px;
+  background-color: var(--bg-lavender);
+  border-radius: 8px;
+  padding: 8px 16px; /* Keeps the original padding */
+  margin: 8px 0;
+  box-sizing: border-box; /* Makes sure padding doesn't affect the width */
+}
+
 /* Styles for Font Awesome brand icons */
 .fa-brands {
-  font-size: 30px;
+  font-size: 40px;
   background-color: white;
   color: var(--bg-slate-grey);
   cursor: pointer;
@@ -225,25 +235,48 @@ button:hover > .source_code_icon {
   background-color: white;
 }
 
-.stack-container {
-  display: flex;
-  justify-content: space-between; /* Adds equal space between the items */
-  flex-wrap: wrap; /* Allows the items to wrap to the next line if the container is too small */
-  padding-left: 00px; /* Move the content to the right */
-}
+/* ##############  Projects Section  ################  */
 
-.stack_item__list {
-  margin-bottom: 30px; /* Adjust as needed for vertical spacing between lists */
-  width: 20%; /* Adjust as needed for the width of each list */
-}
-
-/* Projects Section */
 
 .projects {
   display: grid;
   place-items: center;
   grid-template-columns: auto;
   gap: 2rem;
+  margin-bottom: 2rem; /* Increased the space at the bottom of the projects section */
+}
+
+/* Styles for project coding languages */
+.project_coding_langs > li {
+  list-style: none;
+  color: var(--bg-purple);
+  font-size: 12.5px;
+  background-color: var(--bg-lavender);
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.project_coding_langs {
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  gap: 0.75rem;
+}
+
+.project_details {
+  padding: 0.5rem 0;
+}
+
+.project_details > li {
+  margin-right: 1.5rem;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.project_details > .project_card:first-child {
+  list-style: none;
+  color: var(--text-dark-blue);
 }
 
 /* Projects - Card */
@@ -288,9 +321,7 @@ button:hover > .source_code_icon {
   padding: 0;
 }
 
-
 /* Footer Section */
-
 footer {
   height: 30px;
   padding: 1rem;
@@ -300,6 +331,7 @@ footer {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  border-top: 1px solid black; /* Adds a thin black border to the top of the footer */
 }
 
 footer a,

@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tab Icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/png" />
+
+  <!-- Tab Name -->
+  <title>Roger Qiu Portfolio</title>
   
   <!-- Link to Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -19,6 +25,17 @@
 </head>
 
 <body>
+  <nav id="navbar" class="flex bg-white">
+
+    <div id="nav-icon" class="nav_icon__container">
+      <img id="icon" alt="icon" src="img/favicon-32.png">
+    </div>
+
+    <ul id="nav-menu-links" class="nav_menu__container">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+  </nav>
 
   <!-- About section with profile details -->
   <section id="about" class="about bg-white">
@@ -31,7 +48,7 @@
       <h1>Hi, I'm Roger Qiu, welcome to my personal website! </h1>
       <!-- Introduction and bio -->
       <p>
-        I'm a data analyst at Cohere Health, a healthcare technology company. I currently utilize Python, Apache Spark, Apache Airflow, and the AWS suite to develop and deploy data pipeline jobs. I am currently pursuing a Master's in Data Science at the University of San Diego, with a graduation date of August 2024.
+        I'm a data analyst at <a href="https://www.coherehealth.com/" target="_blank">Cohere Health</a>, a healthcare technology company. I currently utilize Python, Apache Spark, Apache Airflow, and the AWS suite to develop and deploy data pipeline jobs. I am currently pursuing a Master's in Data Science at the <a href="https://www.sandiego.edu/" target="_blank">University of San Diego</a>, with a graduation date of August 2024.
         <br />
         <br />
         I have a passion for creating and developing, ranging from online applications to machine learning models. I enjoy drawing value from big data, with a particular interest in supervised machine learning models.
@@ -41,9 +58,15 @@
       <div class="socials__container">
         <h6>LET'S CONNECT</h6>
         <ul class="icons_social__container flex">
+
           <li class="social_link"><a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/rogerqiu7/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+
           <li class="social_link"><a aria-label="Github" target="_blank" href="https://github.com/rogerqiu7"><i class="fa-brands fa-github"></i></a></li>
-          <button class="btn-primary btn-outlined">Resume</button>
+          
+          <a href="https://github.com/rogerqiu7/Web-Portfolio" target="_blank">
+            <button class="btn-primary btn-outlined">Resume</button>
+          </a>
+
         </ul>
       </div>
     </div>
@@ -51,47 +74,55 @@
     <!-- Skills, Models, and Languages lists -->
     <div class="stack-container">
 
-      <h2>Education</h2>
-      <!-- Languages list -->
-      <ul class="about-coding_langs">
-        <li>University of San Diego</li>
-        <li>Saint Louis University</li>
-      </ul>
+      <div class="row">
+        <div class="column">
+          <h2>Education</h2>
+          <ul class="about-coding_langs">
+            <li>Master of Science - Data Science, University of San Diego, Expected August 2024</li>
+            <li>Bachelor of Science - Healthcare Management, Saint Louis University, May 2019</li>
+          </ul>
+        </div>
+      </div>
 
-      <h2>Experience</h2>
-      <!-- Languages list -->
-      <ul class="about-coding_langs">
-        <li>Cohere</li>
-        <li>National Oilwell Varco</li>
-        <li>Werner Co.</li>
-      </ul>
+      <div class="row">
+        <div class="column">
+          <h2>Skills</h2>
+          <ul class="about-coding_langs">
+            <li>Python</li>
+            <li>Apache Spark</li>
+            <li>Apache Airflow</li>
+            <li>SQL</li>
+            <li>Github & Git</li>
+            <li>AWS Suite</li>
+            <li>Jira</li>
+          </ul>
+        </div>
 
-      <h2>Skills</h2>
-      <!-- Skills list -->
-      <ul class="about-coding_langs">
-        <li>Python</li>
-        <li>Apache Spark</li>
-        <li>Apache Airflow</li>
-        <li>SQL</li>
-        <li>Github</li>
-        <li>Git</li>
-        <li>AWS Suite</li>
-        <li>Jira</li>
-      </ul>
+        <div class="column">
+          <h2>Machine Learning</h2>
+          <!-- Models list -->
+          <ul class="about-coding_langs">
+            <li>Linear Regression</li>
+            <li>Logistic Regression</li>
+            <li>Random Forest</li>
+            <li>K-Means Clustering</li>
+            <li>Keras Neural Networks</li>
+          </ul>
+        </div>
 
-      <h2>Machine Learning</h2>
-       <!-- Models list -->
-      <ul class="about-coding_langs">
-        <li>Linear Regression</li>
-        <li>Logistic Regression</li>
-        <li>Random Forest</li>
-        <li>K-Means Clustering</li>
-        <li>Keras Neural Networks</li>
-      </ul>
-     
+        <div class="column">
+          <h2>Experience</h2>
+          <ul class="about-coding_langs">
+            <li>Data Analyst - Cohere Health, Feb 2023 to Present</li>
+            <li>Shared Service Analyst - National Oilwell Varco, Oct 2022 to Feb 2023</li>
+            <li>Financial Analyst - Werner Co, Sep 2021 to Oct 2022</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-  </section>
 
+  </section>
 
   <!-- Portfolio section -->
   <section id="portfolio" class="projects"></section>
@@ -101,7 +132,7 @@
 
     <a href="https://github.com/rogerqiu7/Web-Portfolio" target="_blank" class="title-text">GitHub Page Repo</a>
 
-    <a href="https://www.linkedin.com/in/rogerqiu7/" target="_blank" class="title-text">Contact</a>
+    <a href="https://github.com/rogerqiu7?tab=repositories" target="_blank" class="title-text">More Projects</a>
 
     <a href="https://github.com/rogerqiu7/Web-Portfolio/blob/main/LICENSE.txt" target="_blank" class="title-text">Terms & License</a>
 
