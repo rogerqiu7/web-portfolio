@@ -19,6 +19,17 @@ const projects = [
   },
   {
     img: {
+      src: './img/patient.png',
+      alt: 'patient',
+    },
+    title: 'Patient Management System',
+    type: ['Java', 'Engineering', 'Aug, 2023'],
+    description: 'Patient management database created using Java and Java Swing for the GUI. User can enter data of a patient into the GUI, and save that paitents into the local database. 2nd window allows user to search patients in the database by name, and retrieve to populate the frame.',
+    technologies: ['Java', 'Java Swing', 'Java AWT'],
+    source: 'https://github.com/rogerqiu7/PatientManagementSystem',
+  },
+  {
+    img: {
       src: './img/weather.png',
       alt: 'weather api',
     },
@@ -49,20 +60,7 @@ const projects = [
     description: 'This is a simple calculator app built using HTML, CSS and JS. It takes number entries from buttons selected, performs the selected operators on them and prints it out on the screen. Inspiration and guide for this project is from The Odin Project course. You can access this project on my website or at the link in the "About" section of this page.',
     technologies: ['HTML', 'CSS', 'Javascript'],
     source: 'https://rogerqiu7.github.io/Simple-Calculator/',
-  },
-/*
-  {
-    img: {
-      src: './img/calculator.png',
-      alt: 'java',
-    },
-    title: 'Java Project',
-    type: ['Java', 'Engineering', 'Jan, 2024'],
-    description: 'Java',
-    technologies: ['Java', 'SCSS', 'Javascript', 'Jest'],
-    source: 'https://rogerqiu7.github.io/Simple-Calculator/',
-  },
-*/
+  }
 ];
 
 // Function to generate a list of items from an array
