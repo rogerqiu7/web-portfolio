@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/maze.png',
+      alt: 'maze game',
+    },
+    title: 'Maze Game',
+    type: ['Java Project', 'Engineering', 'Feb, 2024'],
+    description: 'This is a maze game project for the Outlier computer science course. This project consists of 7 classes in each file, where a player moves from the top left-hand corner of a 2D board to the bottom right-hand corner without running out of health. ',
+    technologies: ['Java'],
+    source: 'https://github.com/rogerqiu7/MazeGame',
+  },
+  {
+    img: {
       src: './img/diabetes.png',
       alt: 'diabetes prediction',
     },
