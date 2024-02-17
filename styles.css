@@ -204,7 +204,7 @@ button:hover > .source_code_icon {
 
 .about-coding_langs > li {
   list-style: none;
-  color: var(--bg-purple);
+  color: #000000;
   font-size: 12.5px;
   background-color: var(--bg-lavender);
   border-radius: 8px;
@@ -249,7 +249,7 @@ button:hover > .source_code_icon {
 /* Styles for project coding languages */
 .project_coding_langs > li {
   list-style: none;
-  color: var(--bg-purple);
+  color: #000000;
   font-size: 12.5px;
   background-color: var(--bg-lavender);
   border-radius: 8px;
