@@ -19,6 +19,17 @@ const projects = [
   },
   {
     img: {
+      src: './img/cartext.png',
+      alt: 'car text',
+    },
+    title: 'Car Brand Text Prediction',
+    type: ['Machine Learning Project', 'Data Science', 'May, 2024'],
+    description: 'The project uses an API to retrieve text from news articles and then performs various natural languague processing methods such as sentiment analysis, classification models from TF-IDF Vectorization, and topic modeling.',
+    technologies: ['EDA', 'Natural Language Processing', 'Machine Learning Models', 'NLTK', 'Regex', 'Sentiment Analysis', 'Topic Modeling'],
+    source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarBrandTextComparison/CarBrandTextComparison.ipynb',
+  },
+  {
+    img: {
       src: './img/breastcancerprediction.png',
       alt: 'cancer prediction',
     },
