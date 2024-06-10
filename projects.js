@@ -14,7 +14,7 @@ const projects = [
     title: 'Car Price and Trim Prediction',
     type: ['Machine Learning Project', 'Data Science', 'June, 2024'],
     description: 'The project utilized various preprocessing methods such as normalization, one-hot encoding, TF-IDF vectorization, and Principal Component Analysis (PCA) to handle high-dimensional data. The best models, Logistic Regression for trim prediction and Linear (Ridge) Regression for price prediction, were selected and optimized using GridSearchCV for high accuracy and performance.',
-    technologies: ['API', 'EDA', 'Data Pre-processing', 'Natural Language Processing', 'Dimensionality Reduction','Hyperparameter Tuning'],
+    technologies: ['EDA', 'Data Pre-processing', 'Natural Language Processing', 'Dimensionality Reduction','Hyperparameter Tuning'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarPriceAndTrimPrediction/CarPriceAndTrimPrediction.ipynb',
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     title: 'Car Brand Text Prediction',
     type: ['Machine Learning Project', 'Data Science', 'May, 2024'],
     description: 'The project uses an API to retrieve text from news articles and then performs various natural languague processing methods such as sentiment analysis, classification models from TF-IDF Vectorization, and topic modeling.',
-    technologies: ['EDA', 'Natural Language Processing', 'Machine Learning Models', 'NLTK', 'Regex', 'Sentiment Analysis', 'Topic Modeling'],
+    technologies: ['APIs', 'EDA', 'Natural Language Processing', 'Machine Learning Models', 'NLTK', 'Regex', 'Sentiment Analysis', 'Topic Modeling'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarBrandTextComparison/CarBrandTextComparison.ipynb',
   },
   {
