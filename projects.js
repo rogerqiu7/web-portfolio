@@ -25,7 +25,7 @@ const projects = [
     title: 'Breast Cancer prediction',
     type: ['Machine Learning Project', 'Data Science', 'March, 2024'],
     description: 'This project uses machine learning techniques to diagnose breast cancer,using EDA, data pre-processing, Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and XGBoost. Hyperparameter tuning is used to optimize these models, and feature selection techniques such as univariate feature selection, recursive feature elimation with cross validation (RFECV) and principal component analysis (PCA) are used to identify the most relevant features.',
-    technologies: ['Python', 'EDA', 'data pre-processing', 'Logistic Regression', 'Decision Tree','Random Forest','K-Nearest Neighbors','XGBoost','Hyperparameter tuning','feature selection'],
+    technologies: ['EDA', 'data pre-processing','Hyperparameter tuning','Feature Selection', 'Feature Importance', 'SHAP values'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/Breast%20Cancer%20Prediction/BreastCancerPrediction.ipynb',
   },
   {
