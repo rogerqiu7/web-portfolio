@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/carprediction.png',
+      alt: 'car prediction',
+    },
+    title: 'Car Price and Trim Prediction',
+    type: ['Machine Learning Project', 'Data Science', 'June, 2024'],
+    description: 'The project utilized various preprocessing methods such as normalization, one-hot encoding, TF-IDF vectorization, and Principal Component Analysis (PCA) to handle high-dimensional data. The best models, Logistic Regression for trim prediction and Linear (Ridge) Regression for price prediction, were selected and optimized using GridSearchCV for high accuracy and performance.',
+    technologies: ['EDA', 'Data Pre-processing', 'Natural Language Processing', 'Principal Component Analysis','Hyperparameter Tuning'],
+    source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarPriceAndTrimPrediction/CarPriceAndTrimPrediction.ipynb',
+  },
+  {
+    img: {
       src: './img/breastcancerprediction.png',
       alt: 'cancer prediction',
     },
