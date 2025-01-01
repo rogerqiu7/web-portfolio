@@ -8,6 +8,28 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/exponent-webpage.png',
+      alt: 'exponent',
+    },
+    title: 'Exponent Web App',
+    type: ['Full-stack / DevOps project', 'Infrastructure', 'Jan, 2025'],
+    description: 'Full-stack DevOps project using Terraform, AWS, Jenkins, Javascript and REST APIs with a complete CI/CD pipeline and cloud infrastructure. This project uses a simple exponent calculator web application with a complete CI/CD pipeline and cloud infrastructure. When users input a base number and exponent, the application calculates the result and stores the data in a database.',
+    technologies: ['Terraform', 'AWS', 'Jenkins', 'Javascript', 'REST APIs'],
+    source: 'https://github.com/rogerqiu7/Exponent-Web-App',
+  },
+  {
+    img: {
+      src: './img/stomachcancer.png',
+      alt: 'stomach cancer',
+    },
+    title: 'County-Level Predictive Modeling of Gastric Cancer Mortality',
+    type: ['Machine Learning Project', 'Data Science', 'Aug, 2024'],
+    description: 'Capstone project using machine learning to predict stomach cancer mortality rates across US counties by analyzing 353 demographic, social determinants of health, and health equity factors, aiming to optimize resource allocation and identify key areas for public health interventions',
+    technologies: ['Data Engineering', 'Data Mining', 'Data Visualization', 'EDA', 'Inferential Statistics', 'Dimensionality Reduction (PCA)', 'Predictive Modeling', 'Machine Learning', 'Hyperparameter Tuning (GridSearchCV)', 'SHAP Values for Model Explainability'],
+    source: 'https://github.com/rogerqiu7/Cancer-Mortality-Prediction',
+  },
+  {
+    img: {
       src: './img/carprediction.png',
       alt: 'car prediction',
     },
