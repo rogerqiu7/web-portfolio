@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/SpringBoot.png',
+      alt: 'springboot',
+    },
+    title: 'Spring Bank App',
+    type: ['Back-end', 'Mar, 2025'],
+    description: 'Simple Spring Boot application with JPA and MySQL DB, using RESTful APIs to create, read, update, and delete account information.',
+    technologies: ['Java', 'Spring Boot', 'Spring Data JPA', 'MySQL DB', 'REST APIs'],
+    source: 'https://github.com/rogerqiu7/Spring-Bank/tree/main',
+  },
+  {
+    img: {
       src: './img/exponent-webpage.png',
       alt: 'exponent',
     },
@@ -63,17 +74,6 @@ const projects = [
   },
   {
     img: {
-      src: './img/maze.png',
-      alt: 'maze game',
-    },
-    title: 'Maze Game',
-    type: ['Java Project', 'Engineering', 'Feb, 2024'],
-    description: 'This is a maze game project for the Outlier computer science course. This project consists of 7 classes in each file, where a player moves from the top left-hand corner of a 2D board to the bottom right-hand corner without running out of health. ',
-    technologies: ['Java'],
-    source: 'https://github.com/rogerqiu7/MazeGame',
-  },
-  {
-    img: {
       src: './img/diabetes.png',
       alt: 'diabetes prediction',
     },
@@ -104,28 +104,6 @@ const projects = [
     description: 'This is a simple live weather API built using HTML, CSS and JS. It takes a city name from user input and display weather conditions of that city using JSON from weatherapi.com. Inspiration and guide for this project is from The Odin Project course. You can access this project on my website or at the link in the "About" section of this page.',
     technologies: ['HTML', 'CSS', 'Javascript'],
     source: 'https://rogerqiu7.github.io/Live-Weather/',
-  },
-  {
-    img: {
-      src: './img/keras.png',
-      alt: 'keras',
-    },
-    title: 'Global Life Expectency',
-    type: ['Machine Learning Project', 'Data Science', '2022'],
-    description: 'Created a Keras neural network model through a combination of nodes of data inputs, weights, and bias. These all work together to recognize and classify objects within the data using multiple layers of nodes to optimize the prediction. Then, through the processes of gradient descent and backpropagation, the deep learning algorithm adjusts and fits itself for accuracy allowing it to make predictions about a life expectancy based on numerous standardized fields such as vaccinations or schooling. Models like this could eventually inform and bring insights to countries and governments ways to improve the life expectancy of their populations.',
-    technologies: ['Python', 'Neural Networks'],
-    source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/Life%20Expectancy/Life%20Expectancy.ipynb',
-  },
-  {
-    img: {
-      src: './img/calculator.png',
-      alt: 'calculator',
-    },
-    title: 'Calculator App',
-    type: ['Javascript App', 'Engineering', '2022'],
-    description: 'This is a simple calculator app built using HTML, CSS and JS. It takes number entries from buttons selected, performs the selected operators on them and prints it out on the screen. Inspiration and guide for this project is from The Odin Project course. You can access this project on my website or at the link in the "About" section of this page.',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    source: 'https://rogerqiu7.github.io/Simple-Calculator/',
   }
 ];
 
