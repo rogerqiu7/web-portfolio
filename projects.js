@@ -85,17 +85,6 @@ const projects = [
   },
   {
     img: {
-      src: './img/patient.png',
-      alt: 'patient',
-    },
-    title: 'Patient Management System',
-    type: ['Java', 'Engineering', 'Aug, 2023'],
-    description: 'Patient management database created using Java and Java Swing for the GUI. User can enter data of a patient into the GUI, and save that paitents into the local database. 2nd window allows user to search patients in the database by name, and retrieve to populate the frame.',
-    technologies: ['Java', 'Java Swing', 'Java AWT'],
-    source: 'https://github.com/rogerqiu7/PatientManagementSystem',
-  },
-  {
-    img: {
       src: './img/weather.png',
       alt: 'weather api',
     },
