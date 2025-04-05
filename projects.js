@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/mongodb.png',
+      alt: 'mongodb',
+    },
+    title: 'Django Bank App',
+    type: ['Back-end', 'Apr, 2025'],
+    description: 'Simple Django application using MongoDB (via Djongo), with RESTful APIs to create, read, update, and delete account information.',
+    technologies: ['Python', 'Django', 'Djongo', 'MongoDB', 'REST APIs'],
+    source: 'https://github.com/rogerqiu7/Django-Bank/tree/main',
+  },
+  {
+    img: {
       src: './img/SpringBoot.png',
       alt: 'springboot',
     },
