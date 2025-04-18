@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/k8.svg',
+      alt: 'k8',
+    },
+    title: 'K8 Go Backend App',
+    type: ['Docker / Kubernetes', 'Apr, 2025'],
+    description: 'A simple Go backend API containerized with a Docker and deployed using Kubernetes (Minikube).',
+    technologies: ['Go', 'Docker', 'Kubernetes', 'REST APIs'],
+    source: 'https://github.com/rogerqiu7/K8-go-backend/tree/main',
+  },
+  {
+    img: {
       src: './img/mongodb.png',
       alt: 'mongodb',
     },
