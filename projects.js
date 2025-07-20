@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/ollama.png',
+      alt: 'ollama',
+    },
+    title: 'LLM Pizza Reviews',
+    type: ['LLM', 'July, 2025'],
+    description: 'Simple RAG (Retrieval-Augmented Generation) pipeline that uses a local LLM and vector database to answer user questions about pizza restaurant reviews based on a provided CSV file.',
+    technologies: ['Ollama', 'LangChain', 'RAG', 'ChromaDB'],
+    source: 'https://github.com/rogerqiu7/llm-pizza-reviews',
+  },
+  {
+    img: {
       src: './img/k8.svg',
       alt: 'k8',
     },
