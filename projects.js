@@ -13,7 +13,7 @@ const projects = [
     },
     title: 'LLM Pizza Reviews',
     type: ['LLM', 'July, 2025'],
-    description: 'Simple RAG (Retrieval-Augmented Generation) pipeline that uses a local LLM and vector database to answer user questions about pizza restaurant reviews based on a provided CSV file.',
+    description: 'A containerized RAG (Retrieval-Augmented Generation) app that uses a local LLM and vector database to answer questions about pizza restaurant reviews.',
     technologies: ['Ollama', 'LangChain', 'RAG', 'ChromaDB'],
     source: 'https://github.com/rogerqiu7/llm-pizza-reviews',
   },
