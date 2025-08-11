@@ -80,19 +80,8 @@ const projects = [
     title: 'Car Price and Trim Prediction',
     type: ['Machine Learning Project', 'Data Science', 'June, 2024'],
     description: 'The project utilized various preprocessing methods such as normalization, one-hot encoding, TF-IDF vectorization, and Principal Component Analysis (PCA) to handle high-dimensional data. The best models, Logistic Regression for trim prediction and Linear (Ridge) Regression for price prediction, were selected and optimized using GridSearchCV for high accuracy and performance.',
-    technologies: ['EDA', 'Data Pre-processing', 'Natural Language Processing', 'Dimensionality Reduction','Hyperparameter Tuning'],
+    technologies: ['EDA', 'Data Pre-processing', 'Natural Language Processing', 'Dimensionality Reduction', 'Hyperparameter Tuning'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarPriceAndTrimPrediction/CarPriceAndTrimPrediction.ipynb',
-  },
-  {
-    img: {
-      src: './img/cartext.png',
-      alt: 'car text',
-    },
-    title: 'Car Brand Text Prediction',
-    type: ['Machine Learning Project', 'Data Science', 'May, 2024'],
-    description: 'The project uses an API to retrieve text from news articles and then performs various natural languague processing methods such as sentiment analysis, classification models from TF-IDF Vectorization, and topic modeling.',
-    technologies: ['APIs', 'EDA', 'Natural Language Processing', 'Machine Learning Models', 'NLTK', 'Regex', 'Sentiment Analysis', 'Topic Modeling'],
-    source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/CarBrandTextComparison/CarBrandTextComparison.ipynb',
   },
   {
     img: {
@@ -102,19 +91,8 @@ const projects = [
     title: 'Breast Cancer prediction',
     type: ['Machine Learning Project', 'Data Science', 'March, 2024'],
     description: 'This project uses machine learning techniques to diagnose breast cancer,using EDA, data pre-processing, Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and XGBoost. Hyperparameter tuning is used to optimize these models, and feature selection techniques such as univariate feature selection, recursive feature elimation with cross validation (RFECV) and principal component analysis (PCA) are used to identify the most relevant features.',
-    technologies: ['EDA', 'data pre-processing','Hyperparameter tuning','Feature Selection', 'Feature Importance', 'SHAP values'],
+    technologies: ['EDA', 'data pre-processing', 'Hyperparameter tuning', 'Feature Selection', 'Feature Importance', 'SHAP values'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/Breast%20Cancer%20Prediction/BreastCancerPrediction.ipynb',
-  },
-  {
-    img: {
-      src: './img/diabetes.png',
-      alt: 'diabetes prediction',
-    },
-    title: 'Diabetes Prediction',
-    type: ['Machine Learning Project', 'Data Science', 'Aug, 2023'],
-    description: 'Group Project for University of San Diegos ADS-504 Machine Learning class. Used various methods and machine learning models to predict diagnosis of diabetes based on individual features. Used hyperparameter tuning to find best parameters for each model that results in the highest AUC ROC score.',
-    technologies: ['Python', 'Logistic Regression', 'Random Forest', 'K-Means Clustering'],
-    source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/ADS_504_Final_Project.ipynb',
   },
   {
     img: {
@@ -153,7 +131,7 @@ const generateCard = (project, id) => `
       </article>
     </section>`;
 
-  
+
 // Event listener to populate the projects section with cards when the window loads
 // Iterating over the projects array and inserting each card into the projectsSection
 window.addEventListener('load', () => {
