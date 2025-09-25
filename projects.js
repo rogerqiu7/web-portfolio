@@ -97,13 +97,13 @@ const projects = [
   {
     img: {
       src: './img/weather.png',
-      alt: 'weather api',
+      alt: 'live weather app',
     },
-    title: 'Weather API',
-    type: ['Javascript API', 'Engineering', '2022'],
-    description: 'This is a simple live weather API built using HTML, CSS and JS. It takes a city name from user input and display weather conditions of that city using JSON from weatherapi.com. Inspiration and guide for this project is from The Odin Project course. You can access this project on my website or at the link in the "About" section of this page.',
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    source: 'https://rogerqiu7.github.io/Live-Weather/',
+    title: 'Live Weather App',
+    type: ['React', 'JavaScript API', 'Engineering', '2025'],
+    description: 'A React-based weather application that provides real-time weather information using the WeatherAPI.com service. Features a component-based architecture with SearchForm for user input, WeatherInfo for displaying data, and comprehensive error handling.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'WeatherAPI'],
+    source: 'https://rogerqiu7.github.io/live-weather-app/',
   }
 ];
 
