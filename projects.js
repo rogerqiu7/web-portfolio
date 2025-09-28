@@ -12,7 +12,7 @@ const projects = [
       alt: 'live weather app',
     },
     title: 'Live Weather App',
-    type: ['Frontend', '2025'],
+    type: ['Frontend', 'Sep, 2025'],
     description: 'A React-based weather application that provides real-time weather information using the WeatherAPI.com service.',
     technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'APIs'],
     source: 'https://rogerqiu7.github.io/live-weather-app/',
