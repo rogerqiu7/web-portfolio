@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/weather.png',
+      alt: 'live weather app',
+    },
+    title: 'Live Weather App',
+    type: ['Frontend', '2025'],
+    description: 'A React-based weather application that provides real-time weather information using the WeatherAPI.com service.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'APIs'],
+    source: 'https://rogerqiu7.github.io/live-weather-app/',
+  },
+  {
+    img: {
       src: './img/ollama.png',
       alt: 'ollama',
     },
@@ -93,17 +104,6 @@ const projects = [
     description: 'This project uses machine learning techniques to diagnose breast cancer,using EDA, data pre-processing, Logistic Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and XGBoost. Hyperparameter tuning is used to optimize these models, and feature selection techniques such as univariate feature selection, recursive feature elimation with cross validation (RFECV) and principal component analysis (PCA) are used to identify the most relevant features.',
     technologies: ['EDA', 'data pre-processing', 'Hyperparameter tuning', 'Feature Selection', 'Feature Importance', 'SHAP values'],
     source: 'https://github.com/rogerqiu7/Python-Projects/blob/main/Breast%20Cancer%20Prediction/BreastCancerPrediction.ipynb',
-  },
-  {
-    img: {
-      src: './img/weather.png',
-      alt: 'live weather app',
-    },
-    title: 'Live Weather App',
-    type: ['React', 'JavaScript API', 'Engineering', '2025'],
-    description: 'A React-based weather application that provides real-time weather information using the WeatherAPI.com service. Features a component-based architecture with SearchForm for user input, WeatherInfo for displaying data, and comprehensive error handling.',
-    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'WeatherAPI'],
-    source: 'https://rogerqiu7.github.io/live-weather-app/',
   }
 ];
 
