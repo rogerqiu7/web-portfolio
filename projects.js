@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/foodvision.png',
+      alt: 'foodvision',
+    },
+    title: 'FoodVision Deep Learning Classifier',
+    type: ['Deep Learning', 'Nov, 2025'],
+    description: 'PyTorch convolutional neural network food image classifier using transfer learning to achieve 98% accuracy, with MLflow experiment tracking with Gradio and Hugging Face web deployment for real-time predictions.',
+    technologies: ['PyTorch', 'MLflow', 'Gradio'],
+    source: 'https://huggingface.co/spaces/rogerqiu77/foodvision-deep-learning-classifier',
+  },
+  {
+    img: {
       src: './img/weather.png',
       alt: 'live weather app',
     },
