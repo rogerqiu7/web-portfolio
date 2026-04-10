@@ -8,6 +8,28 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/nginx.png',
+      alt: 'nginx',
+    },
+    title: 'miniNginx (C++ Reverse Proxy Server)',
+    type: ['C++ Systems', 'April, 2026'],
+    description: 'Built a high-performance event-driven HTTP server in C++ using epoll, supporting static file serving, keep-alive connections, and a reverse proxy with load balancing and backend health checks.',
+    technologies: ['C++', 'Linux', 'epoll', 'TCP/IP'],
+    source: 'https://github.com/rogerqiu7/miniNginx',
+  },
+  {
+    img: {
+      src: './img/foodvision.png',
+      alt: 'foodvision',
+    },
+    title: 'FoodVision Deep Learning Classifier',
+    type: ['Deep Learning', 'Nov, 2025'],
+    description: 'PyTorch convolutional neural network food image classifier using transfer learning to achieve 98% accuracy, with MLflow experiment tracking with Gradio and Hugging Face web deployment for real-time predictions.',
+    technologies: ['PyTorch', 'MLflow', 'Gradio'],
+    source: 'https://huggingface.co/spaces/rogerqiu77/foodvision-deep-learning-classifier',
+  },
+  {
+    img: {
       src: './img/foodvision.png',
       alt: 'foodvision',
     },
