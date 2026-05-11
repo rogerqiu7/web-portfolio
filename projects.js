@@ -8,6 +8,17 @@ const projectsSection = document.getElementById('portfolio');
 const projects = [
   {
     img: {
+      src: './img/orderbook.png',
+      alt: 'orderbook',
+    },
+    title: 'NanoBook - C++ Electronic Trading System Simulator',
+    type: ['C++ Systems', 'May, 2026'],
+    description: 'C++ trading-system simulator that models the core components of a simplified low-latency electronic trading stack including order books, price-time priority, routing, execution flow, and risk controls.',
+    technologies: ['C++', 'Low-Latency Systems'],
+    source: 'https://github.com/rogerqiu7/nanobook',
+  },
+  {
+    img: {
       src: './img/nginx.png',
       alt: 'nginx',
     },
